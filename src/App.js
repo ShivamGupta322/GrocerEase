@@ -9,7 +9,7 @@ import Cart from './Pages/Cart';
 
 
 import LoginSignup from './Pages/LoginSignup';
-import men_banner from './Components/Assets/banner_mens.png' ;
+import men_banner from './Components/Assets/banner_mens.jpg' ;
 import women_banner from './Components/Assets/banner_women.png' 
 import kid_banner from './Components/Assets/banner_kids.png'
 import Footer from './Components/Footer/Footer';
@@ -21,11 +21,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Shop/>}/>
-        <Route path='/Snacks' element={<ShopCateogary banner={men_banner}cateogary="Snack"/>}/>
-        <Route path='/ColdDrinks' element={<ShopCateogary banner={women_banner} cateogary="ColdDrinks"/>}/>
-        <Route path='/BreakFast' element={<ShopCateogary banner={kid_banner} cateogary="BreakFast"/>}/>
-        <Route path='/Vegetables' element={<ShopCateogary cateogary="Vegetables"/>}/>
-        <Route path='/HouseHolds' element={<ShopCateogary cateogary="HouseHolds"/>}/>
+        <Route path='/Snacks' element={<ShopCateogary banner={men_banner} cateogary="Snacks"/>}/>
+        {/* <Route path='/ColdDrinks' element={<ShopCateogary banner={women_banner} cateogary="ColdDrinks"/>}/>
+        <Route path='/BreakFast' element={<ShopCateogary banner={kid_banner} cateogary="BreakFast"/>}/> */}
+        <Route path='/Vegetables' element={<ShopCateogary banner={women_banner}  cateogary="Vegetables"/>}/>
+        <Route path='/HouseHolds' element={<ShopCateogary banner={kid_banner} cateogary="HouseHolds"/>}/>
 
         <Route path='/product' element={<Product/>}/>
         <Route path=':productId' element={<Product/>}/>
