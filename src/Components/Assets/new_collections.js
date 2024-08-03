@@ -1,65 +1,65 @@
-import p1_img from "./product_12.png";
-import p2_img from "./product_35.png";
-import p3_img from "./product_14.png";
+import p1_img from "./product_12.jpg";
+import p2_img from "./product_35.jpg";
+import p3_img from "./product_14.jpg";
 import p4_img from "./product_8.png";
-import p5_img from "./product_15.png";
+import p5_img from "./product_15.jpg";
 import p6_img from "./product_2.png";
-import p7_img from "./product_17.png";
-import p8_img from "./product_28.png";
+import p7_img from "./product_17.jpg";
+import p8_img from "./product_28.jpg";
 
 let new_collections = [
   {
     id: 12,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "FFerrero Rocher",
     image: p1_img,
-    new_price: 50.0,
-    old_price: 80.5,
+    new_price: 149.0,
+    old_price: 299,
   },
   {
     id: 35,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Maza 1L",
     image: p2_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 50.0,
+    old_price: 60,
   },
   {
     id: 14,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Pata And Maggie Combo Pack",
     image: p3_img,
-    new_price: 60.0,
-    old_price: 100.5,
-  },
-  {
-    id: 8,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
-    image: p4_img,
-    new_price: 100.0,
+    new_price: 99.0,
     old_price: 150.0,
   },
   {
+    id: 8,
+    name: "Chocos and Corn Flakes Combo Pack",
+    image: p4_img,
+    new_price: 250.0,
+    old_price: 299.0,
+  },
+  {
     id: 15,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Real Juice",
     image: p5_img,
-    new_price: 50.0,
-    old_price: 80.5,
+    new_price: 120.0,
+    old_price: 135.5,
   },
   {
     id: 2,
-    name: "Striped Flutter Sleeve Overlap Collar Peplum Hem Blouse",
+    name: "Jam and Butter",
     image: p6_img,
-    new_price: 85.0,
-    old_price: 120.5,
+    new_price: 699.0,
+    old_price: 850.0,
   },
   {
     id: 17,
-    name: "Men Green Solid Zippered Full-Zip Slim Fit Bomber Jacket",
+    name: "Fortune Oil 1L",
     image: p7_img,
-    new_price: 60.0,
-    old_price: 100.5,
+    new_price: 150.0,
+    old_price: 200.5,
   },
   {
     id: 28,
-    name: "Boys Orange Colourblocked Hooded Sweatshirt",
+    name: "Nivia Body Lotion",
     image: p8_img,
     new_price: 100.0,
     old_price: 150.0,

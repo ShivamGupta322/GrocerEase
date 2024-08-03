@@ -14,8 +14,9 @@
 
 .newsletter h1{
     color : #454545;
-    font-size : 55px;
+    font-size : 45px;
     font-weight : 600;
+    margin-right: 20px;
 }
 
 .newsletter p{
