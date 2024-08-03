@@ -17,7 +17,7 @@ const Hero = () => {
                 <p className='text-[#171717] text-[100px] font-bold mt-[5vh]'>Groceries</p>
                 <p className='text-[#171717] text-[100px] font-bold mt-[15vh]'>for Everyday</p>
             </div>
-            <div className="flex justify-center items-center gap-[15px] w-[310px] h-[70px] rounded-[75px] border-solid border-2 border-black mr-[30px] mt-[5vh] bg-[#ff4141] text-white text-[22px] font-medium">
+            <div className="flex justify-center items-center gap-[15px] cursor-pointer w-[310px] h-[70px] rounded-[75px] border-solid border-2 border-black mr-[30px] mt-[5vh] bg-[#ff4141] text-white text-[22px] font-medium">
                 <div>Latest Collection</div>
                 <img src={arrow_icon} alt="" />
             </div>
