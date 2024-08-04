@@ -13,10 +13,10 @@ function Navbar() {
         </div>
         <ul  className='flex items-center list-none gap-[50px] text-[#626262]  font-medium text-sm'>
             <li onClick={()=>{setMenu("Shop")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px] '><Link to='/'>Shop</Link> {menu==="Shop"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li>
-            <li onClick={()=>{setMenu("Snacks")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/Snacks'>Snacks</Link>  {menu==="Snacks"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li>
-            {/* <li onClick={()=>{setMenu("Cold Drinks")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'> <Link to='/Cold Drinks'>Cold Drinks</Link> {menu==="Cold Drinks"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li>
-            <li onClick={()=>{setMenu("BreakFast")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/BreakFast'>BreakFast</Link> {menu==="BreakFast"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li> */}
-            <li onClick={()=>{setMenu("Vegetables")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/Vegetables'>Vegetables</Link> {menu==="Vegetables"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li> 
+            <li onClick={()=>{setMenu("Snacks")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/Snacks'>Snacks & ColdDrinks</Link>  {menu==="Snacks"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li>
+            {/* <li onClick={()=>{setMenu("Cold Drinks")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'> <Link to='/Cold Drinks'>Cold Drinks</Link> {menu==="Cold Drinks"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li> */}
+            {/* <li onClick={()=>{setMenu("BreakFast")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/BreakFast'>BreakFast</Link> {menu==="BreakFast"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li> */}
+            <li onClick={()=>{setMenu("Vegetables")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/Vegetables'>Vegetables and Fruits </Link> {menu==="Vegetables"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li> 
             <li onClick={()=>{setMenu("HouseHolds")}} className='flex flex-col items-center cursor-pointer justify-center gap-[3px]'><Link to='/HouseHolds'>HouseHolds</Link> {menu==="HouseHolds"?<hr className='  w-[80%] h-[3px] rounded-md  bg-red-600'/>:<></>}</li>
         </ul>
         <div className='flex items-center gap-[45px]'>
