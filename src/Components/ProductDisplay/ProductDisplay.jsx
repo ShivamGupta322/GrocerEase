@@ -17,21 +17,41 @@ const ProductDisplay = (props) => {
             <div className="productdisplay-img">
                 <img className='productdisplay-main-img' src={product.image} alt="" />
             </div>
-        </div>
-        
-        <div className="productright">
-            <h1>{product.name}</h1>
-            <div className="right-star">
-                <img src={star_icon} alt="" />
-                <img src={star_icon} alt="" />
-                <img src={star_icon} alt="" />
-                <img src={star_icon} alt="" />
-                <img src={star_dull_icon} alt="" />
-                <p>(122)</p>
+            <div className="productdisplay-right">
+                <h1>{product.name}</h1>
+                <div className="productdisplay-right-stars">
+                    <img src={star_icon} alt="" />
+                    <img src={star_icon} alt="" />
+                    <img src={star_icon} alt="" />
+                    <img src={star_icon} alt="" />
+                    <p>(122)</p>
+                </div>
+                <div className="productdisplay-right-prices">
+                    <div className="productdisplay-right-price-old">
+                    ₹{product.old_price}
+                    </div>
+                <div className="productdisplay-right-price-new">₹{product.new_price}</div>
+                </div>
+                <div className="productdisplay-right-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error iusto eum ex omnis vero, aliquam voluptatibus, velit ut corporis quibusdam eveniet voluptate, officia commodi sint suscipit placeat tenetur! Ut ad recusandae cumque assumenda eligendi cum reprehenderit, eius voluptatem excepturi aut perspiciatis perferendis cupiditate officiis. Mollitia optio non nostrum exercitationem!
+                </div>
+                <div className="productdisplay-right-size">
+                    <h1>Select Size</h1>
+                    <div className="productdisplay-right-sizes">
+                        <div>Small Amount</div>
+                        <div>Medium Amount</div>
+                        <div>Large Amount</div>
+                        <div>Xtra LargeAmount</div>
+                        <div>Too Large Amount</div>
+                    </div>
+                </div>
+                <button>ADD TO CART</button>
+                <p className="productdisplay-right-category"><span>Category :</span>Women,T-shirt,Crop</p>
+                <p className="productdisplay-right-category"><span>Tag :</span>Morden,</p>
             </div>
         </div>
-    </div>
-  )
+        </div>
+    )
 }
 
 export default ProductDisplay
