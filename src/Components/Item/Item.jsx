@@ -5,7 +5,7 @@ function Item(props) {
   return (
     <div className=' w-[350px] hover:scale-105 item'>
         <Link to={`/product/${props.id}`}>
-          <img className='h-[30vh]' src={props.image} alt="" />
+          <img className='h-[25vh]' src={props.image} alt="" />
         </Link>
         <p className=''>{props.name}</p>
         <div className="flex gap-[20px] item-prices">

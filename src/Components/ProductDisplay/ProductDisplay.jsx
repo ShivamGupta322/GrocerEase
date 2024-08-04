@@ -29,9 +29,9 @@ const ProductDisplay=(props)=>{
                 </div>
                 <div className="productdisplay-right-prices">
                     <div className="productdisplay-right-price-old">
-                        ${product.old_price}
+                    ₹{product.old_price}
                     </div>
-                <div className="productdisplay-right-price-new">${product.new_price}</div>
+                <div className="productdisplay-right-price-new">₹{product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error iusto eum ex omnis vero, aliquam voluptatibus, velit ut corporis quibusdam eveniet voluptate, officia commodi sint suscipit placeat tenetur! Ut ad recusandae cumque assumenda eligendi cum reprehenderit, eius voluptatem excepturi aut perspiciatis perferendis cupiditate officiis. Mollitia optio non nostrum exercitationem!
