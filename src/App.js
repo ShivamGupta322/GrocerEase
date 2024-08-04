@@ -21,11 +21,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Shop/>}/>
-        <Route path='/Snacks' element={<ShopCateogary banner={men_banner} cateogary="Snacks"/>}/>
-        {/* <Route path='/ColdDrinks' element={<ShopCateogary banner={women_banner} cateogary="ColdDrinks"/>}/>
-        <Route path='/BreakFast' element={<ShopCateogary banner={kid_banner} cateogary="BreakFast"/>}/> */}
-        <Route path='/Vegetables' element={<ShopCateogary banner={women_banner}  cateogary="Vegetables"/>}/>
-        <Route path='/HouseHolds' element={<ShopCateogary banner={kid_banner} cateogary="HouseHolds"/>}/>
+        <Route path='/Snacks' element={<ShopCateogary banner={men_banner} category="Snacks"/>}/>
+        {/* <Route path='/ColdDrinks' element={<ShopCateogary banner={women_banner} category="ColdDrinks"/>}/> */}
+        {/* <Route path='/BreakFast' element={<ShopCateogary banner={kid_banner} cateogary="BreakFast"/>}/> */}
+        <Route path='/Vegetables' element={<ShopCateogary banner={women_banner}  category="Vegetables"/>}/>
+        <Route path='/HouseHolds' element={<ShopCateogary banner={kid_banner} category="HouseHolds"/>}/>
 
         <Route path='/product' element={<Product/>}/>
         <Route path=':productId' element={<Product/>}/>
