@@ -4,6 +4,8 @@
 .description-navigator{
     display: flex;
     border: 1px solid black;
+
+   
 }
 .description-nav-box{
     display: flex;
