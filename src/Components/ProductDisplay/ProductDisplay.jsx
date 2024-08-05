@@ -47,7 +47,7 @@ const ProductDisplay = (props) => {
                         <div>Too Large Amount 1kg</div>
                     </div>
                 </div>
-                <button>ADD TO CART</button>
+                <button onclick>ADD TO CART</button>
                 <p className="productdisplay-right-category"><span>Category :</span>Women,T-shirt,Crop</p>
                 <p className="productdisplay-right-category"><span>Tag :</span>Morden,</p>
             </div>
