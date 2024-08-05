@@ -6,29 +6,34 @@
     background: #e2e2e2;
     border: 0;
 }
-.cartitems-format-main{
-    display: flex;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+.cartitems-format-main{ 
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr;
     align-items: center;
+    
     gap: 75px;
     padding: 20px 0px ;
     color: #454545;
     font-size: 18px;
     font-weight: 600;
 }
-.cartitems {
+.cartitems-format{
     font-size: 17px;
     font-weight: 500;
+
+    
 }
+
+
 .carticon-product-icon{
-    height:62px;
+    height:70px;
 }
 .cartitems-remove-icon{
-    width: 15px;
+    width: 25px;
     margin: 0px 40px;
     cursor: pointer;
 }
-.cartitems-quatity{
+.cartitems-quantity{
     width: 64px;
     height: 50px;
     border: 2px solid #ebebeb;
@@ -45,7 +50,7 @@
     margin-right: 200px;
     gap: 40px;
 }
-.cartitems-total-items{
+.cartitems-total-item{
     display: flex;
     justify-content: space-between;
     padding: 15px 0px;
@@ -84,13 +89,5 @@
     width: 33px;
     height: 50px;
 
-}
-.cartitems-promobox button{
-    width:170px;
-    height:58 px;
-    font-size:16px;
-    background:black;
-    color:white;
-    cursor:pointer;
 }
 

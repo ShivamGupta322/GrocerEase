@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import './CartItems.css'
-import { ShopContext } from '../Context/ShopContext';
+
 import remove_icon from '../Assets/cart_cross_icon.png'
+import { ShopContext } from '../Context/ShopContext';
 
 const CartItems = () => {
     const{getTotalCartAmount,all_product,cartItems,removeFromCart}= useContext(ShopContext);
@@ -11,7 +12,7 @@ const CartItems = () => {
       <div className="cartitems-format-main">
         <p>Products</p>
         <p>Title</p>
-        <p>Price</p>
+        <p >Price</p>
         <p>Qty</p>
         <p>Total</p>
         <p>Remove</p>
@@ -36,7 +37,7 @@ const CartItems = () => {
         <div className="cartitems-down">
             <div className="cartitems-total">
                 <h1>Cart totals</h1>
-                <div>
+                <div cla>
                     <div className="cartitems-total-item">
                     <p>Subtotal</p>
                     <p>${getTotalCartAmount}</p>
@@ -58,10 +59,11 @@ const CartItems = () => {
             </div>
             <div className="cartitems-promocode">
                 <p>If you have a promo code,Enter it here</p>
-                <div className="cartitems-promobox">
-                    <input type="text" placeholder='promo code' />
-                    <button>Submit</button>
+                <div className="text">
+                    <input className='bg-transparent h-7 mt-4 w-54 p-4 rounded-md border-2  ' type="text" placeholder='Promo code' />
+                  
                 </div>
+                <button className='mt-5 bg-black rounded-md text-zinc-400 px-3 py-2'>Submit</button>
             </div>
         </div>
         
