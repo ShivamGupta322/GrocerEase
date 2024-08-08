@@ -6,7 +6,9 @@ import { ShopContext } from '../Context/ShopContext';
 
 const ProductDisplay = (props) => {
     const {product}=props;
-    const {addToCart}=useContext(ShopContext);
+    const {addToCart,message,showMessage}=useContext(ShopContext);
+    
+
 
   return (
     <div className='productDisplay flex'>
@@ -46,13 +48,16 @@ const ProductDisplay = (props) => {
                         <div>Small Amount 100g</div>
                         <div>Medium Amount 250g</div>
                         <div>Large Amount 400g</div>
-                        <div>Xtra LargeAmount 500h</div>
+                        <div>EXtra Large Amount 500g</div>
                         <div>Too Large Amount 1kg</div>
                     </div>
                 </div>
+                <div className='flex gap-[20px]'>
                 <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-                <p className="productdisplay-right-category"><span>Category :</span>Women,T-shirt,Crop</p>
-                <p className="productdisplay-right-category"><span>Tag :</span>Morden,</p>
+                {showMessage && (<p className={`fade-message ${showMessage ? 'visible' : ''} text-green-600`}>{message}</p>)}
+                </div>
+                <p className="productdisplay-right-category"><span>Category :</span>{product.category}</p>
+                <p className="productdisplay-right-category"><span>Tag :</span>Morden</p>
             </div>
       
         </div>

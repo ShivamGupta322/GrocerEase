@@ -3,6 +3,8 @@ import React, { createContext, useEffect, useState } from 'react'
 // import all_product from '../Assets/all_product'
 export const ShopContext=createContext(null);
 
+
+
 const getDefaultCart =()=>{
   let cart={};
   for (let index=0; index < 300+1; index++){
@@ -14,6 +16,8 @@ const getDefaultCart =()=>{
 const ShopContextProvider = (props) => {
   const [all_product,setAll_Product] = useState([]);
   const[cartItems,setCartItems] = useState(getDefaultCart());
+  const [message, setMessage] = useState('');
+  const [showMessage, setShowMessage] = useState(false);
 
   useEffect(()=>{
     fetch('http://localhost:4000/allproducts')
@@ -52,6 +56,12 @@ const ShopContextProvider = (props) => {
       .then((response)=>response.json())
       .then((data)=>console.log(data))
     }
+    setMessage('Product Added to your Cart 🎉');
+    setShowMessage(true);
+
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 2000);
   }
 
 
@@ -97,7 +107,7 @@ const ShopContextProvider = (props) => {
     }
     return totalItem;
     }
-  const contextValue={getTotalCartItems,getTotalCartAmount,all_product,cartItems,addToCart,removeFromCart};
+  const contextValue={getTotalCartItems,getTotalCartAmount,all_product,cartItems,addToCart,removeFromCart,message,showMessage};
   return (
     <ShopContext.Provider value={contextValue}>
      {props.children}

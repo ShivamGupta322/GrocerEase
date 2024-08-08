@@ -4,20 +4,37 @@
     align-items: center;
     gap:10px;
     overflow: hidden;
+    /* margin-bottom: 10vh; */
+   
     
+    /* position: relative;
+    clip-path: path('M0,128 C80,96 160,192 240,192 C320,192 400,96 480,128 C560,160 640,224 720,208 C800,192 880,96 960,96 C1040,96 1120,192 1200,192 L1200,320 L0,320 Z'); */
 }
+
+
+.wave-border{
+    height: 200px;
+}
+  
 
 .new-collections h1{
     color: #171717;
+   
     font-size: 50px;
     font-weight: 600;
+    background: linear-gradient(270deg, rgb(34, 79, 241),rgb(86, 24, 127));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .new-collections hr{
     width: 200px;
     height: 6px;
     border-radius: 10px;
-    background: #252525;
+    /* background: #252525; */
+    background: linear-gradient(270deg, rgb(34, 79, 241),rgb(86, 24, 127));
+
+    -webkit-text-fill-color: transparent;
 }
 
 .collections{

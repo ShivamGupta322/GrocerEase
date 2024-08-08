@@ -8,8 +8,8 @@ const ShopCateogary = (props) => {
   
   
   return (
-    <div className=''>
-      <img className='display-block m-auto w-[82%] mb-10'  src={props.banner} alt="" />
+    <div className='mt-[13vh]'>
+      <img className=' display-block m-auto w-full h-[40vh] object-fill mb-10'  src={props.banner} alt="" />
       <div className='flex m-[0px 170px] mb-10 px-10 justify-between items-center'>
         <p className=' font-semibold'>
           <span className='font-semibold mb-10'>Showing 1-12</span>out of 36 products

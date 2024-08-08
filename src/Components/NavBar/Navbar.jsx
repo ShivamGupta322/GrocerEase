@@ -10,7 +10,7 @@ function Navbar() {
     const [menu, setMenu] = useState("shop");
     const {getTotalCartItems}=useContext(ShopContext);
   return (
-    <div className='fixed w-full top-0 left-0 flex justify-around	p-[16px] shadow-[0_1px_3px_-2px_black] bg-white'>
+    <div className='fixed w-full top-0 left-0 flex justify-around	p-[16px] shadow-[0_1px_3px_-2px_black] bg-white z-10'>
         <Link to='/'>
         <div className='flex items-center gap-[10px]'>
             <img src={logo} alt="" />

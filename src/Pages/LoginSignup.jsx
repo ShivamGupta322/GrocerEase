@@ -57,7 +57,7 @@ const LoginSignup = () => {
   }
 
   return (
-    <div className='h-[85vh] w-full bg-[#fce3fe] pt-[30px]'>
+    <div className='h-[85vh] mt-[13vh] w-full bg-[#fce3fe] pt-[30px]'>
       <div className='w-[580px] h-[500px] bg-white m-auto px-4 py-6 shadow-lg shadow-zinc-500/50 rounded-2xl mt-[5vh]'>
         <h1 className=' my-10 mx-2 font-semibold '>{state}</h1>
         <div className='  mt-2 gap-10 flex flex-col '  >
