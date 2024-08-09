@@ -39,7 +39,7 @@ const ProductDisplay = (props) => {
                     </div>
                 <div className="productdisplay-right-price-new">₹{product.new_price}</div>
                 </div>
-                <div className="productdisplay-right-description">
+                <div className="productdisplay-right-description ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error iusto eum ex omnis vero, aliquam voluptatibus, velit ut corporis quibusdam eveniet voluptate, officia commodi sint suscipit placeat tenetur! Ut ad recusandae cumque assumenda eligendi cum reprehenderit, eius voluptatem excepturi aut perspiciatis perferendis cupiditate officiis. Mollitia optio non nostrum exercitationem!
                 </div>
                 <div className="productdisplay-right-size">
@@ -53,11 +53,11 @@ const ProductDisplay = (props) => {
                     </div>
                 </div>
                 <div className='flex gap-[20px]'>
-                <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
-                {showMessage && (<p className={`fade-message ${showMessage ? 'visible' : ''} text-green-600`}>{message}</p>)}
+                <button className='active:bg-green-600' onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
+                {showMessage && (<p className={`fade-message ${showMessage ? 'visible' : ''} text-green-600 mt-4`}>{message}</p>)}
                 </div>
                 <p className="productdisplay-right-category"><span>Category :</span>{product.category}</p>
-                <p className="productdisplay-right-category"><span>Tag :</span>Morden</p>
+                <p className="productdisplay-right-category"><span>Tag :</span>Fresh</p>
             </div>
       
         </div>

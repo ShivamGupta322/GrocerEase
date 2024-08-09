@@ -84,20 +84,44 @@ const ShopContextProvider = (props) => {
   }
 
 
-  const getTotalCartAmount=()=>{
+  // const getTotalCartAmount=()=>{
+  //   let totalAmount = 0;
+  //   for(const item in cartItems)
+  //     {
+  //     if(cartItems[item]>0)
+  //       {
+  //       let itemInfo = all_product.find((product)=>product.id===Number(item))
+  //       totalAmount += itemInfo.new_price * cartItems[item];
+  //       // console.log(itemInfo)
+  //       // console.log(cartItems)
+  //       // console.log(all_product)
+  //     } 
+    
+    
+  //   }
+  //   return totalAmount;
+  // }
+
+  const getTotalCartAmount = () => {
     let totalAmount = 0;
-    for(const item in cartItems)
-      {
-      if(cartItems[item]>0)
-        {
-        let itemInfo = all_product.find((product)=>product.id===Number(item))
-        totalAmount += itemInfo.new_price*cartItems[item];
-      } 
-    
-    
+    for (const item in cartItems) {
+      if (cartItems[item] > 0) {
+        const itemInfo = all_product.find(product => product.id === Number(item));
+        
+        console.log("Item Info:", itemInfo); // Log itemInfo to check its properties
+  
+        if (itemInfo && itemInfo.new_price !== undefined) {
+          totalAmount += itemInfo.new_price * cartItems[item];
+        } else {
+          console.warn(`'new_price' is missing for product with id ${item}`);
+        }
+      }
     }
     return totalAmount;
-  }
+  };
+
+
+
   const getTotalCartItems=()=>{
     let totalItem=0;
     for(const item in cartItems){

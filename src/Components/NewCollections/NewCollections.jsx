@@ -13,7 +13,7 @@ const NewCollections=()=>{
     },[])
     return(
         <>
-        <div className='wave-border'>
+        <div className='wave-border' id='latest-collection'>
         <svg
         viewBox="0 0 1200 320"
         preserveAspectRatio="none"

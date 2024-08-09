@@ -8,7 +8,7 @@ const ShopCateogary = (props) => {
   
   
   return (
-    <div className='mt-[13vh]'>
+    <div className='mt-[13vh] '>
       <img className=' display-block m-auto w-full h-[40vh] object-fill mb-10'  src={props.banner} alt="" />
       <div className='flex m-[0px 170px] mb-10 px-10 justify-between items-center'>
         <p className=' font-semibold'>
@@ -19,7 +19,7 @@ const ShopCateogary = (props) => {
         </div>
 
       </div>
-      <div className=' ml-20 shopcategory-products m-[20px 170px] grid gap-20 grid-cols-4 grid-rows-3 overflow-hidden mr-[50px]'>
+      <div className='pl-8 pt-2 shopcategory-products  grid gap-20 grid-cols-4 grid-rows-3 '>
         {all_product.map((item,i)=>{
           if(props.category===item.category){
             return <Item  key={i} id ={item.id} name={item.name} image={item.image} new_price={item.new_price} old_price={item.old_price}/>

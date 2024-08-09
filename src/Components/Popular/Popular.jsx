@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 // import data_product from '../Assets/data'
 import Item from '../Item/Item'
+import '../Popular/Popular.css'
 
 function Popular() {
 
@@ -14,7 +15,7 @@ useEffect(()=>{
 
   return (
     <>
-    <div className='bg-zinc-200 mb-[1px]'>
+    <div className='background mb-[1px]'>
     <div className="wave-border">
         <svg
           viewBox="0 0 1200 320"

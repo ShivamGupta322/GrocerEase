@@ -1,3 +1,17 @@
 .animation{
     animation:fadeIn 3s;
 }
+
+
+.hand {
+    width: 100px; /* Adjust the size as needed */
+    animation: shake 0.5s infinite alternate;
+    transform-origin: bottom center; /* Pivot from the bottom */
+}
+
+/* Keyframes for shaking animation */
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
