@@ -1,0 +1,103 @@
+/* .card{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right,darkblue,darkorchid);
+    border-image-slice: 1;
+    background-color: white;
+    position: relative;
+    height: 320px;
+} */
+
+
+
+.item-prices {
+    display: flex;
+    align-items: center; /* Ensures items are aligned vertically in the center */
+    justify-content: space-between; /* Ensures space between the two price sections */
+  }
+  
+  .item-prices-new,
+  .item-prices-old {
+    display: flex;
+    align-items: center;
+  }
+  
+  .add-btn {
+    opacity: 0;
+    margin-left: 10px; 
+    padding: 6px 12px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease, background-color 0.3s ease, transform 0.3s ease; 
+  }
+  
+  .card:hover .add-btn {
+    opacity: 1;
+  }
+  
+  .item-prices-old {
+    color: #8c8c8c;
+    /* text-decoration: line-through; */
+  }
+
+
+
+  .add-message {
+    margin-top: 10px;
+    color: green;
+    font-size: 0.9rem;
+    text-align: center;
+    animation: fadeOut 2s forwards;
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid);
+    border-image-slice: 1;
+    background-color: white;
+    position: relative;
+    height: 320px;
+    overflow: hidden; 
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: -5px; 
+    left: -5px; 
+    right: -5px; 
+    bottom: -5px; 
+    background: linear-gradient(270deg, white, rgb(228, 37, 7));
+    z-index: -1;
+    border-radius: 5px; /* Ensure smooth corners */
+    background-size: 400% 400%; /* Set up for the animation to move */
+    transition: all 1s ease-out;
+}
+
+.card:hover::before {
+    background-position: 100% 0; /* Move the background position to create the motion */
+}

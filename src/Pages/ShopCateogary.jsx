@@ -9,7 +9,7 @@ const ShopCateogary = (props) => {
   
   
   return (
-    <div className=' mt-[13vh]'>
+    <div className=' mt-[13vh] '>
       <img className=' display-block m-auto w-full h-[40vh] object-fill mb-10'  src={props.banner} alt="" />
       <div className='flex m-[0px 170px] mb-10 px-10 justify-between items-center'>
         <p className=' font-semibold'>

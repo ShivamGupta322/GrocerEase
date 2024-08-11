@@ -1,0 +1,43 @@
+.box{
+    padding: 8px;
+    /* background-color: #2f2f2f; */
+    position: relative;
+    overflow: hidden;
+    height: 60vh;
+    width: 65%;
+    margin-left: 20vw;
+    
+    
+}
+
+
+.in{
+    position: relative;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+
+
+.box::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    
+    width: 110%;
+    height: 100%;
+    background-image: linear-gradient(120deg,red,orange);
+    animation: move 1.5s infinite;
+    height: 100%;
+    width: 100%;
+    
+}
+
+@keyframes move {
+    100%{
+    transform: translate(-50%,-50%) rotate(255deg);
+
+    }
+}

@@ -39,6 +39,7 @@
     max-width: max(40%,500px);
 }
 
-.place-order  button{
+ .place{
     margin-top: 30px;
+    color: white;
 }

@@ -49,7 +49,7 @@ const PlaceOrder = () => {
                 <div/>
             
             </div>
-            <button onClick={()=>{alert("It will be available in future Updates ! THANKOU!!!")}}>PROCEED TO Payment</button>
+            <button className='place rounded-md' onClick={()=>{alert("It will be available in future Updates ! THANKOU!!!")}}>PROCEED TO Payment</button>
             </div>
         </div>
     </form>

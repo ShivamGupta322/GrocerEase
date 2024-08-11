@@ -3,7 +3,7 @@
     flex-direction: column;  
     align-items: center;
     gap:10px;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* margin-bottom: 10vh; */
    
     
@@ -41,8 +41,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 50px;
-    gap:30px;
-    margin-left: 60px;
+    gap:80px;
+    /* margin-left: 210px; */
 
 }
 
