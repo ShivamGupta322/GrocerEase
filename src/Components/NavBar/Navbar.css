@@ -18,6 +18,10 @@
     justify-content: center;
     align-items: center;
   }
+
+  .nav-div{
+    z-index: 9999;
+  }
   
   #button:hover {
     color: #ffffff;
