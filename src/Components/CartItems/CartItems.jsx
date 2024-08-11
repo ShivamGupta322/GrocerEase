@@ -24,7 +24,7 @@ const CartItems = () => {
                     return (
                         <div key={e.id}>
                             <div className="cartitems-format cartitems-format-main">
-                                <img src={e.image} alt="" className='carticon-products-icon'/>
+                                <img src={e.image} alt="" className='carticon-products-icon h-20'/>
                                 <p>{e.name}</p>
                                 <p>₹{e.new_price}</p>
                                 <div className='cartitems-quantity'>
@@ -61,7 +61,7 @@ const CartItems = () => {
                         </div>
                     </div>
                 
-                <button className='bg-[#ff5a5a] h-[160px] rounded-md text-white ' onClick={() => { navigate('/order') }}>PROCEED TO CHECKOUT</button>
+                <button className='bg-[#ff5a5a] h-[160px] rounded-md text-white active:bg-red-600 ' onClick={() => { navigate('/order') }}>PROCEED TO CHECKOUT</button>
                 </div>
                 <div className="cartitems-promocode">
                     <p>If you have a promo code, Enter it here</p>
