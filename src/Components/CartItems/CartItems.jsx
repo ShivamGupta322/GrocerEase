@@ -33,7 +33,7 @@ const CartItems = () => {
                 if (cartItems[e.id] > 0) {
                     return (
                         <div key={e.id}>
-                            <div className="cartitems-format cartitems-format-main">
+                            <div className="cartitems-format cartitems-format-main hover:bg-zinc-50">
                                 <img src={e.image} alt="" className='carticon-products-icon h-20'/>
                                 <p>{e.name}</p>
                                 <p>₹{e.new_price}</p>
