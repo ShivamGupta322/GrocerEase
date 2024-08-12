@@ -1,6 +1,7 @@
 
 import './App.css';
 import Navbar from './Components/NavBar/Navbar';
+import SearchResults from './Components/SearchResults/SearchResults';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Shop from './Pages/Shop';
 import ShopCateogary from './Pages/ShopCateogary';
@@ -23,6 +24,8 @@ function App() {
       <Navbar />
       <ScrollToTop />
       <Routes>
+      
+                <Route path="/search" element={<SearchResults />} />
         <Route path='/' element={<Shop/>}/>
         <Route path='/Snacks' element={<ShopCateogary banner={men_banner} category="Snacks"/>}/>
         {/* <Route path='/ColdDrinks' element={<ShopCateogary banner={women_banner} category="ColdDrinks"/>}/> */}
