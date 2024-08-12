@@ -5,6 +5,7 @@ import './Offers.css'
 const Offers = () => {
   return (
     <>
+    <div className='background-exclusive'>
        <div className="wave-border">
         <svg
           viewBox="0 0 1200 320"
@@ -33,6 +34,7 @@ const Offers = () => {
         </div>
     </div>
     </div>
+   </div>
     </>
   )
 }
