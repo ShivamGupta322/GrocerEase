@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './CartItems.css';
 import remove_icon from '../Assets/cart_cross_icon.png';
 import { ShopContext } from '../Context/ShopContext';
@@ -7,6 +7,16 @@ import { useNavigate } from 'react-router-dom';
 const CartItems = () => {
     const { getTotalCartAmount, all_product, cartItems, removeFromCart, addToCart } = useContext(ShopContext);
     const navigate = useNavigate();
+    const [promoCode, setPromoCode] = useState(''); // State to store the promo code
+    const [showPopup, setShowPopup] = useState(false); // State to control the popup visibility
+
+    const handlePromoCodeSubmit = () => {
+        setShowPopup(true); // Always show the popup on submit
+    };
+
+    const closePopup = () => {
+        setShowPopup(false); // Close the popup
+    };
 
     return (
         <div className='cartitems'>
@@ -66,11 +76,26 @@ const CartItems = () => {
                 <div className="cartitems-promocode">
                     <p>If you have a promo code, Enter it here</p>
                     <div className="text">
-                        <input className='bg-transparent h-7 mt-4 w-54 p-4 rounded-md border-2' type="text" placeholder='Promo code'/>
+                        <input 
+                            className='bg-transparent h-7 mt-4 w-54 p-4 rounded-md border-2' 
+                            type="text" 
+                            placeholder='Promo code' 
+                            value={promoCode}
+                            onChange={(e) => setPromoCode(e.target.value)}
+                        />
                     </div>
-                    <button className='mt-5 bg-black rounded-md text-zinc-400 px-3 py-2'>Submit</button>
+                    <button className='mt-5 bg-black rounded-md text-zinc-400 px-3 py-2' onClick={handlePromoCodeSubmit}>Submit</button>
                 </div>
             </div>
+
+            {showPopup && (
+                <div className="popup">
+                    <div className="popup-inner">
+                        <p>Sorry, Promocode is Expired or Invalid</p>
+                        <button className="close-popup" onClick={closePopup}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
