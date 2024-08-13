@@ -16,7 +16,7 @@ function Item(props) {
   };
 
   return (
-    <div className='w-[260px] hover:scale-105 card'>
+    <div className='image w-[260px] hover:scale-105 card'>
       <Link to={`/product/${props.id}`}>
         <img className='h-[25vh]' src={props.image} alt="" />
       </Link>
