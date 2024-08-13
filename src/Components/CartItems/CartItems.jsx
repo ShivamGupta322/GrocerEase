@@ -7,15 +7,39 @@ import { useNavigate } from 'react-router-dom';
 const CartItems = () => {
     const { getTotalCartAmount, all_product, cartItems, removeFromCart, addToCart } = useContext(ShopContext);
     const navigate = useNavigate();
-    const [promoCode, setPromoCode] = useState(''); // State to store the promo code
-    const [showPopup, setShowPopup] = useState(false); // State to control the popup visibility
+    const [promoCode, setPromoCode] = useState('');
+    const [discount, setDiscount] = useState(0); // State to store discount percentage
+    const [showPopup, setShowPopup] = useState(false);
+    const [message, setMessage] = useState('');
+    const [showMessage, setShowMessage] = useState(false);
+
+    // Define valid promo codes and their discounts
+    const promoCodes = {
+        'SAVE10': 10, // 10% discount
+        'SAVE20': 20, // 20% discount
+    };
 
     const handlePromoCodeSubmit = () => {
-        setShowPopup(true); // Always show the popup on submit
+        if (promoCodes[promoCode]) {
+            setDiscount(promoCodes[promoCode]); // Apply the discount
+            setMessage('Pomocode Applied 🤑');
+    setShowMessage(true);
+
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 2000);
+        } else {
+            setShowPopup(true); // Show popup if invalid
+        }
     };
 
     const closePopup = () => {
-        setShowPopup(false); // Close the popup
+        setShowPopup(false);
+    };
+
+    const calculateDiscountedTotal = () => {
+        const total = getTotalCartAmount();
+        return total - (total * discount / 100);
     };
 
     return (
@@ -68,7 +92,7 @@ const CartItems = () => {
                         <hr />
                         <div className="cartitems-total-item">
                             <h3>Total</h3>
-                            <h3>₹{getTotalCartAmount()}</h3>
+                            <h3>₹{calculateDiscountedTotal()}</h3> {/* Updated Total */}
                         </div>
                     </div>
                 
@@ -86,6 +110,8 @@ const CartItems = () => {
                         />
                     </div>
                     <button className='mt-5 bg-black rounded-md text-zinc-400 px-3 py-2' onClick={handlePromoCodeSubmit}>Submit</button>
+                {showMessage && (<h3 className={`fade-message ${showMessage ? 'visible' : ''} text-green-600 mt-4`}>{message}</h3>)}
+
                 </div>
             </div>
 
