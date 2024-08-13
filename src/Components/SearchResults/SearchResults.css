@@ -43,7 +43,7 @@
 
 .search-results-container .result-item p {
     margin: 5px 0;
-    color: #555;
+    /* color: #555; */
 
 }
 
@@ -51,6 +51,12 @@
     font-weight: bold;
     color: #e67e22;
 }
+
+.search-results-container .result-item p.price1 {
+    font-weight: bold;
+    color: #e67e22;
+}
+
 
 
 .search-results-container .result-item {
@@ -101,3 +107,9 @@
 }
 
 
+.description{
+    margin-top: 20px;
+    color: #e67e22;
+    font-size: medium;
+    font-weight: 600;
+}
