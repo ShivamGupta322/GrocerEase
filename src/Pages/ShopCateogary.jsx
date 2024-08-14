@@ -35,7 +35,7 @@ const ShopCateogary = (props) => {
         </svg>
       </div>
       
-      <div className=' pl-8 pt-2 shopcategory-products  grid gap-20 grid-cols-4 grid-rows-3 '>
+      <div className=' pl-8 pt-2 shopcategory-products  grid gap-20 grid-cols-4 grid-rows-3  '>
     
         {all_product.map((item,i)=>{
           if(props.category===item.category){

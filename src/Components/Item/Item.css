@@ -13,6 +13,17 @@
     height: 320px;
 } */
 
+.image {
+  position: relative;
+  padding: 20px;
+  /* border-radius: 15px; */
+  /* background: linear-gradient(135deg, #f5f5f5 25%, #e0e0e0 100%); */
+  
+   /* background-color: grey; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
 
 
 .item-prices {
