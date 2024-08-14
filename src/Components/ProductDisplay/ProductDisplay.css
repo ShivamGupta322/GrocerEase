@@ -24,9 +24,10 @@
     flex-direction: column;
 }
 .productdisplay-right h1{
-    color:#3d3d3d3d;
+    color:black;
     font-size:40px;
     font: bold;
+    font-weight: 400;
    
 }
 .productdisplay-right-stars{
@@ -88,3 +89,11 @@
 .productdisplay-right-category span{
     font-weight: 600;
 }
+
+
+.productdisplay-img{
+    height: 350px;
+    width: 400px;
+    margin-left: 60px;
+}
+

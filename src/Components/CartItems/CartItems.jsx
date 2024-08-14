@@ -61,7 +61,7 @@ const CartItems = () => {
                                 <img src={e.image} alt="" className='carticon-products-icon h-20'/>
                                 <p>{e.name}</p>
                                 <p>₹{e.new_price}</p>
-                                <div className='cartitems-quantity'>
+                                <div className='cartitems-quantity hover:bg-zinc-50'>
                                     <button className='border-solid border-2 border-black  mr-3 rounded-full active:bg-red-500 hover:bg-zinc-200 active:text-white' onClick={() => removeFromCart(e.id)}>-</button>
                                     <span>{cartItems[e.id]}</span>
                                     

@@ -12,7 +12,8 @@ const ContactPopup = ({ isOpen, onClose }) => {
           &times;
         </button>
         <h2>Contact Us</h2>
-        <form className="contact-popup-form">
+        <form className="contact-popup-form" action="https://formspree.io/f/xwpebznk"
+  method="POST">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
           
