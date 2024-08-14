@@ -12,8 +12,10 @@ const ProductDisplay = (props) => {
 
   return (
     <div className='productDisplay flex'>
-        <div className="productleft">
-            <div className="img-list w-[10vw]">
+        <div className="productleft ">
+            <div className="img-list w-[10opx] h-[60px] mt-2 Class
+Properties
+object-contain">
                 <img src={product.image} alt="" />
                 <img src={product.image} alt="" />
                 <img src={product.image} alt="" />
@@ -21,11 +23,13 @@ const ProductDisplay = (props) => {
 
             </div>
             </div>
-            <div className="productdisplay-img w-[90vw] h-[60vh] mt-[40px]">
-                <img className='productdisplay-main-img w-full h-full' src={product.image} alt="" />
+            <div className="productdisplay-img w-[80vw] h-[60vh] mt-[40px]">
+                <img className='productdisplay-main-img w-full h-full Class
+Properties
+object-contain' src={product.image} alt="" />
             </div>
             <div className="productdisplay-right">
-                <h1 className='font-bold '>{product.name}</h1>
+                <h1 className='font-bold text-black'>{product.name}</h1>
                 <div className="productdisplay-right-stars">
                     <img src={star_icon} alt="" />
                     <img src={star_icon} alt="" />
@@ -40,10 +44,10 @@ const ProductDisplay = (props) => {
                 <div className="productdisplay-right-price-new">₹{product.new_price}</div>
                 </div>
                 <div className="productdisplay-right-description ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae error iusto eum ex omnis vero, aliquam voluptatibus, velit ut corporis quibusdam eveniet voluptate, officia commodi sint suscipit placeat tenetur! Ut ad recusandae cumque assumenda eligendi cum reprehenderit, eius voluptatem excepturi aut perspiciatis perferendis cupiditate officiis. Mollitia optio non nostrum exercitationem!
+                    {product.description}
                 </div>
                 <div className="productdisplay-right-size">
-                    <h1>Select Size</h1>
+                    <h1>Select Quantity</h1>
                     <div className="productdisplay-right-sizes">
                         <div>Small Amount 100g</div>
                         <div>Medium Amount 250g</div>
