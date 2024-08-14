@@ -1,63 +1,80 @@
-.newsletter{
-    width: 65%;
-    height: 40vh;
+.newsletter {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #fde1ff 0%, #c7147d22 60%);
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px rgba(217, 217, 217, 0.5), -20px -20px 60px rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  .newsletter-title {
+    color: #454545;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .newsletter-description {
+    color: #454545;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
     display: flex;
-   
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: auto;
-    padding:0px 140px ;
-    margin-bottom: 150px;
-    background:  linear-gradient(180deg , #fde1ff 0%,#c7147d22 60%);
-    grid: 30px;
-    border-radius: 50px;
-    box-shadow:  20px 20px 60px #d9d9d9,
-             -20px -20px 60px #ffffff;
-}
-
-.newsletter h1{
-    color : #454545;
-    font-size : 55px;
-    font-weight : 600;
-    
-}
-
-.newsletter p{
-    color: #454545;
-    font-size:20px;
-}
-.newsletter div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: white;
-    width:730px;
-    height: 70px;
-    border-radius: 80px;
-    border: 1px solid #e3e3e3;
-    
-
-}
-
-.newsletter input{
-    width: 500px;
-    margin-left: 30px;
+    gap: 10px;
+  }
+  
+  .newsletter-form input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
     border: none;
-    outline: none;
-    color:#616161;
-    font-family: Poppins;
-    font-size: 16px;
-    
-}
-.newsletter div button{
-    width: 210px;
-    height: 70px;
-    border-radius: 80px;
-    background: black;
-    color: white;
-    font-size: 16px;
+    border-radius: 30px;
+    font-size: 1rem;
+    color: #616161;
+  }
+  
+  .newsletter-form button {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    font-size: 1rem;
     cursor: pointer;
-
-
-}
+  }
+  
+  .newsletter-message {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #FF4141;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .newsletter-title {
+      font-size: 1.8rem;
+    }
+  
+    .newsletter-description {
+      font-size: 1rem;
+    }
+  
+    .newsletter-form input {
+      width: 90%;
+    }
+  
+    .newsletter-form button {
+      width: 90%;
+    }
+  }
+  

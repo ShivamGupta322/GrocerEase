@@ -1,0 +1,43 @@
+/* src/Components/Footer/FooterItems/AboutPopup.css */
+.about-popup {
+    position: fixed;
+    top: 0; /* Start at the top of the page */
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover the entire screen */
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  .about-popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 800px; /* Increased width for a full-page experience */
+    width: 90%;
+    text-align: center;
+  }
+  
+  .close-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
