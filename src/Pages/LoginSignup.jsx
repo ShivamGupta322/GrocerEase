@@ -62,7 +62,7 @@ const LoginSignup = () => {
         <h1 className=' my-10 mx-2 font-semibold '>{state}</h1>
         <div className='  mt-2 gap-10 flex flex-col '  >
          {state==="Sign Up"?<input name='username' value={formData.username} onChange={changeHandler} className='h-10 w-full pl-2 border-1 text-[#5c5c5c]  text-md border-2 ' type="text" placeholder='Your Name' />:<></>} 
-          <input name='email' value={formData.email} onChange={changeHandler} className='h-10 w-full pl-2 border-1 text-[#5c5c5c]  text-md border-2' type="email" placeholder='Email Adress' />
+          <input name='email' value={formData.email} onChange={changeHandler} className='h-10 w-full pl-2 border-1 text-[#5c5c5c]  text-md border-2' type="email" placeholder='Email Address' />
           <input name='password' value={formData.password} onChange={changeHandler} className='h-10 w-full  pl-2 border-1 text-[#5c5c5c] text-md border-2' type="password" placeholder='Password' />
                  
         </div>

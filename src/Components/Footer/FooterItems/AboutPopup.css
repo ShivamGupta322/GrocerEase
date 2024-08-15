@@ -31,6 +31,11 @@
     border-radius: 5px;
     cursor: pointer;
   }
+
+
+  .about-popup-content p{
+    text-align: justify;
+  }
   
   @keyframes fadeIn {
     from {
