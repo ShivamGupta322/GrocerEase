@@ -115,16 +115,16 @@ function Navbar() {
                     placeholder="Search products..."
                     className=' p-[8px] pr-[40px] border-[1px] border-gray-300 rounded-xl focus:outline-none focus:border-red-600'
                 />
-                <button type="submit" className=' bg-transparent w-[40px] h-[40px] border-2 border-black border-solid rounded-full  bg-zinc-100 active:bg-[#ff6f69]'>
+                <button type="submit" className='hover:scale-105 bg-transparent w-[40px] h-[40px] border-2 border-black border-solid rounded-full  bg-zinc-100 active:bg-[#ff6f69]'>
                     <FontAwesomeIcon icon={faSearch} className='text-black hover:text-red-600 transition-colors duration-200 ' />
                 </button>
             </form>
             <div className='flex items-center gap-[45px]'>
                 {localStorage.getItem('auth-token') ? 
                     <>
-                        <img src={user_icon} alt="User Profile" className='cursor-pointer h-[50px] w-[50px] rounded-full border-2 border-solid border-black' onClick={toggleUserProfile} />
-                        <Link to='/cart'><img src={cart_icon} alt="Cart" /></Link>
-                        <div className='hover:animate-ping w-[22px] h-[22px] flex justify-center items-center mt-[-35px] ml-[-55px] text-sm rounded-xl bg-red-500 text-white'>
+                        <img src={user_icon} alt="User Profile" className='hover:scale-105 cursor-pointer h-[50px] w-[50px] rounded-full border-2 border-solid border-black' onClick={toggleUserProfile} />
+                        <Link to='/cart'><img className='hover:scale-105' src={cart_icon} alt="Cart" /></Link>
+                        <div className='hover:animate-ping w-[22px] h-[22px] z-10 flex justify-center items-center mt-[-35px] ml-[-55px] text-sm rounded-xl bg-red-500 text-white'>
                             {getTotalCartItems()}
                         </div>
                     </>
