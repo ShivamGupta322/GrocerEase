@@ -1,5 +1,5 @@
 import React from 'react'
-import exclusive_image from '../Assets/exclusive_image.jpeg'
+import exclusive_image from '../Assets/exclusive_image2.jpeg'
 import './Offers.css'
 
 const Offers = () => {
