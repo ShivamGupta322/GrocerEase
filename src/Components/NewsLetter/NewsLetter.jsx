@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import './NewsLetter.css';
 
 const NewsLetter = () => {
@@ -8,21 +9,23 @@ const NewsLetter = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Replace with your backend URL
-    const backendUrl = 'http://localhost:4000/subscribe';
+    // EmailJS service parameters
+    const serviceId = 'service_hy6aoaq';
+    const templateId = 'template_od5htsl';
+    const userId = '3Wcpi02d8QNc7PJlJ';
 
     try {
-      const response = await fetch(backendUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
+      // Send the email using EmailJS
+      const response = await emailjs.send(serviceId, templateId, { email }, userId);
 
-      if (response.ok) {
-        setMessage('Thank you for subscribing!');
+      if (response.status === 200) {
+        setMessage('Thank you for subscribing! A confirmation email has been sent to your inbox.');
         setEmail('');
+
+        // Clear the message after 3 seconds
+        setTimeout(() => {
+          setMessage('');
+        }, 3000);
       } else {
         setMessage('Something went wrong. Please try again.');
       }
