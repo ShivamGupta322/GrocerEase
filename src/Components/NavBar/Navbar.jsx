@@ -7,7 +7,7 @@ import { ShopContext } from '../Context/ShopContext';
 import '../NavBar/Navbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import arrowbtn from '../Assets/arrowbtn.png';
+import pngw1 from '../Assets/pngw1.png';
 
 function Navbar() {
     const [menu, setMenu] = useState("shop");
@@ -135,13 +135,13 @@ function Navbar() {
 
             {/* User Profile Panel */}
             {showUserProfile && userData && (
-                <div className='fixed right-0 mt-20 w-[300px] h-fit bg-zinc-200 shadow-lg p-4 transition-transform transform flex flex-col items-center gap-5'>
-                    <div className='flex items-center gap-4'>
-                    <h2 className='text-xl font-semibold ml-[65px]'>User Profile</h2>
-                    <img className='h-[30px] w-[30px] ml-[40px] cursor-pointer' src={arrowbtn} onClick={toggleUserProfile} alt="" />
+                <div className='fixed right-0 mt-20 w-[300px] h-fit bg-zinc-200 shadow-lg p-4 transition-transform transform flex flex-col   gap-5'>
+                    <div className= 'flex justify-between gap-4'>
+                    <h2 className=' ml-[0px] text-xl font-bold '>User Profile</h2>
+                    <img className='mt-[5px] h-[15px] w-[15px] mr-[30px] cursor-pointer' src={pngw1} onClick={toggleUserProfile} alt="" />
                     </div>
                     
-                    <img  src={user_icon} alt="User Profile" className='cursor-pointer h-[50px] w-[50px] rounded-full border-2 border-solid border-black' onClick={toggleUserProfile} />
+                    <img  src={user_icon} alt="User Profile" className='ml-[0px] cursor-pointer h-[50px] w-[50px] rounded-full border-2 border-solid border-black' onClick={toggleUserProfile} />
                     {editMode ? (
                         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                             <input
@@ -172,13 +172,13 @@ function Navbar() {
                             <button type="button" onClick={() => setEditMode(false)} className='p-2 bg-red-500 text-white rounded-md'>Cancel</button>
                         </form>
                     ) : (
-                        <div className='flex flex-col items-center gap-4'>
-                            <p><strong>Name:</strong> <span className='text-red-600'>{userData.name}</span></p>
+                        <div className='flex flex-col  gap-4'>
+                            <p><strong>Name:</strong> <span className='text-green-600'>{userData.name}</span></p>
                             <p><strong>Email:</strong> <span className='text-green-600'>{userData.email}</span></p>
                             <p><strong>Address:</strong> <span className='text-blue-600'>{userData.address}</span></p>
                             <button onClick={() => setEditMode(true)} className='p-2 bg-blue-500 text-white rounded-md mt-2'>Edit Profile</button>
                             {/* Logout button added here */}
-                            <button onClick={handleLogout} className='' id='button'>Logout</button>
+                            <button onClick={handleLogout} className='ml-[80px]' id='button'>Logout</button>
                         </div>
                     )}
                 </div>
